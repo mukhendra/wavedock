@@ -1,6 +1,0 @@
-bowtie
-fastqc
-samtools
-pysam
-bbmap
-bwa
