@@ -1,0 +1,16 @@
+name: example-environment
+channels:
+  - conda-forge
+  - bioconda
+  - plotly
+  - anaconda
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - fastqc
+  - bowtie
+  - samtools
+  - pysam
+  - bbmap
+  - bwa
