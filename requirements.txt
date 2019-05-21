@@ -1,0 +1,6 @@
+bowtie=1.2.2
+fastqc=0.11.8
+samtools=1.9
+pysam=0.9.1.4
+bbmap=38.22
+bwa=0.7.8
