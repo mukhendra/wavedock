@@ -1,16 +1,45 @@
-name: example-environment
+name: bio
 channels:
   - conda-forge
   - bioconda
   - plotly
   - anaconda
+  - biobuilds
 dependencies:
   - python
-  - numpy
-  - pandas
+  - anaconda
   - fastqc
   - bowtie
   - samtools
   - pysam
   - bbmap
   - bwa
+  - hisat2
+  - star
+  - tophat
+  - bedtools
+  - pear
+  - plotly
+  - tensorflow
+  - scikit-learn
+  - keras
+  - gatk4
+  - bowtie2
+  - trimmomatic
+  - bwa
+  - vcftools
+  - bcftools
+  - freebayes
+  - jags
+  - igv
+  - fastqc
+  - multiqc
+  - fastx-toolkit
+  - tabix
+  - pytabix
+  - picard
+  - htslib
+  - git
+  - pymysql
+  - paramiko
+  - sqlalchemy
