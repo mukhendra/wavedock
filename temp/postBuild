@@ -1,0 +1,57 @@
+cd ~/.local/
+wget -O longranger-2.2.2.tar.gz "http://cf.10xgenomics.com/releases/genome/longranger-2.2.2.tar.gz?Expires=1560934814&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2NmLjEweGdlbm9taWNzLmNvbS9yZWxlYXNlcy9nZW5vbWUvbG9uZ3Jhbmdlci0yLjIuMi50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1NjA5MzQ4MTR9fX1dfQ__&Signature=ODRVallsv~y12LKr1m6PfX2EHozzlswxQnX-8GBl2SyRa43BpUwb-KBRGFeFC86k3nfqDNZc85R0aRQtEnnmE5BBn-H66J3Bi7bY9vkzDkdI44cjq9iQR8f3TZHX2bmzxgpXEK6~CW3wdPDLntDVLljrfj6CBUi8dnxAgLqTZj2oiVk6jSczqYh0oKIAjh9yH8M1j0Gy5euAK0TudNbagSruE~e2YR-ECYnRFeKmyldmoiUabuMUeSKeP-HkHUUlGmsKClmX-O8F2z~AqZ2vjTOkN6tgoYVudGApwT-1w1GsydTCzFUPk6kbkEV5zK0QJ-aVqedg9NpWohl37y1RCw__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
+tar -xzvf longranger-2.2.2.tar.gz
+export PATH=~/.local/longranger-2.2.2:$PATH
+mkdir lr_refs
+cd lr_refs
+mkdir hg19
+mkdir b37
+mkdir grch38
+mkdir degen
+cd hg19
+wget http://cf.10xgenomics.com/supp/genome/refdata-hg19-2.1.0.tar.gz
+tar -xzvf refdata-hg19-2.1.0.tar.gz
+cd ..
+cd b37
+wget http://cf.10xgenomics.com/supp/genome/refdata-b37-2.1.0.tar.gz
+tar -xzvf refdata-b37-2.1.0.tar.gz
+cd ..
+cd grch38
+wget http://cf.10xgenomics.com/supp/genome/refdata-GRCh38-2.1.0.tar.gz
+tar -xzvf refdata-GRCh38-2.1.0.tar.gz
+cd ..
+cd degen
+wget http://cf.10xgenomics.com/supp/genome/lariat-degen-regions-1.2.0.bed
+cd ..
+cd ..
+wget -O cellranger-3.0.2.tar.gz "http://cf.10xgenomics.com/releases/cell-exp/cellranger-3.0.2.tar.gz?Expires=1560935568&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2NmLjEweGdlbm9taWNzLmNvbS9yZWxlYXNlcy9jZWxsLWV4cC9jZWxscmFuZ2VyLTMuMC4yLnRhci5neiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTU2MDkzNTU2OH19fV19&Signature=ETf400nDoixMATf9FRF-5kzN~Yja1dHzHFifoi9WEbEwwteHfNrcj8jieInsMvEHT2CxW~Sk1-aDZ9rxxHeiG8XTdJuZPPJuOb1Fgj3LFADrUQtxhuux3gKPklrWRDkk0xuRvEbUFgmzthxbTl7QzXGFGqHfj572Ekl-ZC3hT1s6nDj28wrRhs8LY84guKTUOQNk-Ph~6YxHqJpTCVecRzGq5cDKJirnkeF0D6Nf9nW09uabEqW3MbbnJViKqqSIKSaP6KWzt2LvijpwQrYJxt6WymE6LPG0XGatP18SDQeMBUch9TksCDCkSBqnsERN0Qq3SrozniPFvKPHJQtR5Q__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
+tar -xzvf cellranger-3.0.2.tar.gz
+export PATH=~/.local/cellranger-3.0.2:$PATH
+mkdir cr_refs
+cd cr_refs
+mkdir grch38
+cd grch38
+wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-GRCh38-3.0.0.tar.gz
+tar -xzvf refdata-cellranger-GRCh38-3.0.0.tar.gz
+cd ..
+mkdir hg19
+cd hg19
+wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-3.0.0.tar.gz
+tar -xzvf refdata-cellranger-hg19-3.0.0.tar.gz
+cd ..
+mkdir mm10
+cd mm10
+wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-mm10-3.0.0.tar.gz
+tar -xzvf refdata-cellranger-mm10-3.0.0.tar.gz
+cd ..
+mkdir hg19mm10
+cd hg19mm10
+wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-and-mm10-3.0.0.tar.gz
+tar -xzvf refdata-cellranger-hg19-and-mm10-3.0.0.tar.gz
+cd ..
+mkdir ercc
+cd ercc
+wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-ercc92-1.2.0.tar.gz
+tar -xzvf refdata-cellranger-ercc92-1.2.0.tar.gz
+cd ..
+cd ..

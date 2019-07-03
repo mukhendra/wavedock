@@ -1,0 +1,40 @@
+name: bio
+channels:
+  - conda-forge
+  - bioconda
+  - plotly
+  - anaconda
+  - biobuilds
+dependencies:
+  - anaconda
+  - htslib
+  - java-jdk
+  - fastqc
+  - bowtie
+  - samtools
+  - pysam
+  - bbmap
+  - bwa
+  - hisat2
+  - star
+  - bedtools
+  - pear
+  - plotly
+  - tensorflow
+  - scikit-learn
+  - keras
+  - gatk4
+  - bowtie2
+  - trimmomatic
+  - vcftools
+  - freebayes
+  - jags
+  - igv
+  - multiqc
+  - fastx-toolkit
+  - tabix
+  - pytabix
+  - git
+  - pymysql
+  - paramiko
+  - sqlalchemy
