@@ -39,7 +39,7 @@ dependencies:
   - bokeh=1.0.4=py37_0
   - boto=2.49.0=py37_0
   - bottleneck=1.2.1=py37h035aef0_1
-  - bowtie=1.0.0=1
+  - bowtie=1.2.3=1
   - bowtie2=2.3.5=py37he860b03_0
   - bwa=0.7.17=opth9695fd3_1
   - bzip2=1.0.6=opth7bcbc6a_0
@@ -349,7 +349,7 @@ dependencies:
     - async-generator==1.10
     - chardet==3.0.4
     - idna==2.8
-    - jupyterhub==0.9.4
+    - jupyterhub==1.1.0
     - mako==1.0.9
     - nteract-on-jupyter==2.0.12
     - pamela==1.0.0
